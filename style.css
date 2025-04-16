@@ -15,6 +15,10 @@ body {
     padding-top: 7.75rem;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 
 /* CLASS */
@@ -63,7 +67,7 @@ body {
     text-decoration: none;
     font-size: 1.125rem;
     color: white;
-    font-weight: 600;
+    font-weight: 500;
     background-color: #0C8E1F;
     padding: 0.4rem 0.5rem;
     line-height: center;
@@ -77,6 +81,10 @@ body {
 
 .styleBold {
     font-weight: 700;
+}
+
+.space {
+    height: 7.75rem;
 }
 /* CLASS END */
 
@@ -148,6 +156,19 @@ header nav ul li a:hover {
     transition: 0.4s;
 }
 
+/* MENU MOBILE */
+ 
+#menuToogle {
+    display: none;
+}
+
+.menu-icon {
+    color: #0C8E1F;
+    display: none;
+}
+
+/* MENU MOBILE END */
+
 /* HEADER END */
 
 /* MAIN */
@@ -215,24 +236,12 @@ header nav ul li a:hover {
 /* ABOUT US */
 #aboutUs {
     display: flex;
-    align-items: center;
     justify-content: space-between;
-    padding: 8.125rem 13.8125rem;
-    gap: 4em;
+    padding: 5rem 10.5rem 8.125rem 10.5rem;
 }
 
-
-#aboutUsImg1 {
-    width: 100%;
-    z-index: 0;
-}
-
-#aboutUsImg2 {
-    width: 50%;
-    position: absolute;
-    left: 22.5rem;
-    top: 18.1875rem;
-    z-index: 1;
+#aboutUsImg {
+    margin-left: -11.9rem;
 }
 
 #aboutUsText {
@@ -240,8 +249,7 @@ header nav ul li a:hover {
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
-    z-index: 2;
-    margin-bottom: 3.85rem;
+    padding: 2rem 4.35rem 0 4.5rem;
 }
 
 #aboutUsText a {
@@ -260,36 +268,34 @@ header nav ul li a:hover {
 /* ABOUT US END*/
 
 /* SERVICES */
+
 #services {
     display: flex;
-    flex-direction: column;
+    flex-direction: column
 }
+
+#servicesTitle {
+    display: flex;
+    justify-content: left;
+    margin-top: 5rem;
+    margin-left: 13.8125rem;
+}
+
 
 /* INSTALL */
-#services-install {
+#install {
     display: flex;
     justify-content: space-between;
-    padding: 8.125rem 13.8125rem 3.0625rem 13.8125rem;
-    gap: 2rem;
+    padding: 5rem 13.8125rem 8.125rem 13.8125rem;
 }
 
-#services-installImg {
-    display: flex;
-    flex-direction: column;
-    gap: 5.25rem;
-    padding: 0;
-}
-
-#installImg {
-    padding: 0 1rem 0 0;
-}
 
 #installText {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 1rem;
-    padding: 8.5rem 3.25rem 0 0;
+    padding: 2rem 4.35rem 0 4.5rem;
 }
 
 /* INSTALL END */
@@ -298,7 +304,9 @@ header nav ul li a:hover {
 #cleaning {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 5rem 13.8125rem 3.0625rem 13.8125rem;
+    gap: 13rem;
 }
 
 #cleaningText {
@@ -307,10 +315,16 @@ header nav ul li a:hover {
     align-items: flex-start;
     gap: 1rem;
     padding: 2rem 13rem 0 0;
+    order: 1;
+    flex: 1;
+    max-width: 500px;
 }
 
 #cleaningImg {
     padding: 0 6.5rem 0 0;
+    order: 2;
+    flex: 1;
+    max-width: 500px;
 }
 /* CLEANING END */
 
@@ -339,16 +353,18 @@ footer {
     align-items: center;
     background-color: #1E2E0B;
     width: 100%;
-    height: 26.9375rem;
+    height: auto;
     position: relative;
+    padding-bottom: 4.125rem;
 }
 
 #footerContent {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 12.875rem;
     padding: 2.1875rem 12.25rem;
     max-width: 95.625rem;
-    margin: 0 auto;
+    margin-left: -10rem;
 }
 
 /* CONTACT */
@@ -450,13 +466,17 @@ footer {
     height: 4.125rem;
     position: absolute;
     bottom: 0;
+    left: 0; /* Garante que ocupe toda a largura */
 }
 
 #copyright p {
     text-align: center;
     color: white;
     font-size: 0.95rem;
+    width: 100%;
+    padding: 0 1rem;
 }
+
 /* COPYRIGHT END */
 
 /* FOOTER END */
@@ -464,4 +484,313 @@ footer {
 /* CONTAINER-1 END */
 
 /* BODY END */
+
+/* ============ RESPONSIVIDADE ============ */
+
+/* Tablets (768px - 1024px) */
+@media (max-width: 1024px) {
+    /* Ajustes gerais */
+    body {
+        padding-top: 6rem;
+    }
+    
+    header, #headerBackground {
+        height: 6rem;
+    }
+    
+    #headerContent {
+        height: 6rem;
+        padding: 1rem 2rem;
+    }
+    
+    /* Home section */
+    #home {
+        height: 22rem;
+    }
+    
+    #homeText {
+        top: 3rem;
+        left: 2rem;
+    }
+    
+    /* About Us */
+    #aboutUs {
+        padding: 5rem 6rem;
+        flex-direction: column;
+    }   
+    
+    #aboutUsImg {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: relative;
+      margin: 0 auto;
+    }
+    
+    #aboutUsText {
+        margin-bottom: 0;
+        text-align: center;
+        align-items: center;
+    }
+    
+    #aboutUsText a {
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    /* Services */
+    
+    #servicesTitle {
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    #cleaning {
+        flex-direction: column;
+        padding: 3rem 1rem;
+        gap: 2rem;
+    }
+    
+    #cleaningText {
+        order: 2;
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    #cleaningImg {
+        order: 1;
+        max-width: 100%;
+        margin-bottom: 1.5rem;
+    }
+
+    #install, #cleaning, #maintenance {
+        padding: 3rem 6rem;
+        flex-direction: column;
+    }
+    
+    #installText, #cleaningText, #maintenanceText {
+        padding: 2rem 0 0 0;
+        text-align: center;
+        align-items: center;
+    }
+    
+    #installImg, #cleaningImg, #maintenanceImg {
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    /* Footer */
+    #footerContent {
+        padding: 2rem 4rem;
+    }
+}
+
+@media (max-width: 992px) {
+    header nav {
+        position: relative;
+    }
+
+    header nav ul {
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        top: 6rem;
+        left: 0;
+        width: 100%;
+        height: 0%;
+        background-color: #1E2E0B;
+        transition: height 0.3s ease;
+        overflow: hidden;
+        z-index: 10;
+        gap: 1rem;
+    }
+
+    header nav ul li{
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 1rem 0;
+    }
+
+    header nav ul li a {
+        display: block;
+        font-size: 1rem;
+    }
+
+    #mobileContact {
+        width: 40%;
+    }
+
+    .menu-icon {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 11;
+        cursor: pointer;
+    }
+    
+    #menuToogle:checked ~ ul {
+        display: flex;
+        height: 50%;
+        border-radius: 0 0 15px 15px  ;
+    }
+    
+    #menuToogle:checked ~ label i:nth-child(2) {
+        display: block;
+    }
+
+    #menuToogle:checked ~ label i:first-child {
+        display: none;
+    }
+
+    #menuToogle:not(:checked) ~ label i:first-child {
+        display: block;
+    }
+
+    #menuToogle:not(:checked) ~ label i:nth-child(2) {
+        display: none;
+    }
+
+    header nav ul li a:hover {
+        text-decoration: none;
+    }
+
+        /* Footer */
+        #footerContent {
+            flex-direction: column;
+            align-items: flex-start; /* Centraliza os itens */
+            text-align: center; /* Centraliza o texto */
+            padding: 2rem 1rem; /* Reduz o padding */
+            gap: 2rem; /* Espaço entre as seções */
+            margin: 0 auto;
+        }
+    
+        #contact, #links, #followUs {
+            align-items: center; /* Centraliza os itens */
+            width: 100%; /* Ocupa toda a largura */
+        }
+    
+        #contactContent, #links ul, #followUsImg {
+            align-items: center; /* Centraliza os itens internos */
+        }
+    
+        #location, #phone, #email {
+            justify-content: center; /* Centraliza os ícones e textos */
+        }
+    
+        #links ul {
+            align-items: center; /* Centraliza os links */
+        }
+    
+        #followUsImg {
+            justify-content: center; /* Centraliza os ícones de redes sociais */
+        }
+}
+
+/* Celulares (576px - 768px) */
+@media (max-width: 768px) {
+    /* Header */
+    #logo {
+        margin-left: 0;
+    }
+    
+    /* Home */
+    #home {
+        height: 18rem;
+    }
+    
+    #homeText h4 {
+        font-size: 1.1rem;
+    }
+    
+    #homeText h5, #homeText p {
+        font-size: 1rem;
+    }
+
+    
+    /* About Us e Services */
+    #aboutUs, #install, #cleaning, #maintenance {
+        padding: 3rem 2rem;
+    }
+    
+
+}
+
+/* Celulares pequenos (até 576px) */
+@media (max-width: 576px) {
+    /* Header */
+    #headerContent {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+    
+    #logo {
+        margin-bottom: 1rem;
+    }
+    
+    header nav {
+        flex-direction: column;
+        gap: 1rem;
+        width: 100%;
+    }
+    
+    header nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+        text-align: center;
+    }
+    
+    #getContact {
+        width: 100%;
+        text-align: center;
+    }
+    
+    /* Home */
+    #home {
+        height: 16rem;
+    }
+    
+    #homeText {
+        top: 2rem;
+        left: 1rem;
+    }
+    
+    #knowMore {
+        width: 100%;
+    }
+    
+    
+    /* Footer */
+    .footerTitle h3 {
+        font-size: 1.2rem;
+    }
+    
+    .footerText h5 {
+        font-size: 1rem;
+    }
+    
+    #copyright p {
+        font-size: 0.8rem;
+    }
+}
+
+/* Ajustes para telas muito grandes */
+@media (min-width: 1600px) {
+    #container {
+        max-width: 100%;
+    }
+    
+    #headerContent, #home, #container-2, #footerContent {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}
+
+
 
