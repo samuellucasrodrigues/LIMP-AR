@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
@@ -17,6 +15,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
         rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/a894f72b4e.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="style.css">
 
@@ -33,12 +33,18 @@
                 <a href="index.html" class="figure">
 
                     <div id="logo">
-                        <img src="images/LIMPARLOGO.png" alt="LIMP-AR Logo">
+                        <img src="images/LOGO.svg" alt="LIMP-AR Logo">
                     </div>
 
                 </a>
 
                 <nav>
+
+                    <input type="checkbox" id="menuToogle">
+                    <label for="menuToogle" class="menu-icon">
+                        <i class="fa-solid fa-bars fa-xl"></i>
+                        <i class="fa-solid fa-xmark fa-2xl"></i>
+                    </label>
 
                     <ul>
 
@@ -58,13 +64,13 @@
                             <a href="#footerContent">Contatos</a>
                         </li>
 
+                        <li id="mobileContact">
+                            <a href="https://wa.me/5531984625912" target="_blank" class="button">
+                                Entre em contato
+                            </a>
+                        </li>
+
                     </ul>
-
-
-                    <a href="https://wa.me/5531984625912" target="_blank" id="getContact" class="button">
-                        Entre em contato
-                    </a>
-
 
                 </nav>
 
@@ -103,17 +109,12 @@
             <div id="container-2">
 
                 <section id="aboutUs">
+                    
+                    <div class="space"></div>
 
-
-                    <div id="aboutUsImg">
-                        <figure id="aboutUsImg1" class="figure">
-                            <img src="images/aboutUs1.png" alt="About Us 1">
+                        <figure id="aboutUsImg" class="figure">
+                            <img src="images/AboutUsimg.svg" alt="About Us">
                         </figure>
-
-                        <figure id="aboutUsImg2" class="figure">
-                            <img src="images/aboutUs2.png" alt="About Us 2">
-                        </figure>
-                    </div>
 
                     <div id="aboutUsText">
 
@@ -149,24 +150,22 @@
 
                 <section id="services">
 
-                    <div id="services-install">
+                    <div class="space"></div>
 
-                        <div id="services-installImg">
+                    <div class="title">
 
-                            <div class="title">
-
-                                <div id="servicesTitle">
-                                    <h3>Serviços</h3>
-
-                                </div>
-
-                            </div>
-
-                            <figure id="installImg">
-                                <img src="images/Instalação.png" alt="Instalação">
-                            </figure>
+                        <div id="servicesTitle">
+                            <h3>Serviços</h3>
 
                         </div>
+
+                    </div>
+
+                    <div id="install">
+
+                        <figure id="installImg">
+                            <img src="images/Instalação.png" alt="Instalação">
+                        </figure>
 
                         <div id="installText">
 
@@ -251,7 +250,7 @@
         <footer>
 
             <div id="footerContent">
-
+                <div class="space"></div>
                 <div id="contact">
 
                     <div class="footerTitle">
@@ -263,52 +262,53 @@
                     <div id="contactContent">
 
                         <div id="location">
-    
+
                             <figure id="locationImg">
                                 <img src="images/Location icon.png" alt="Location">
                             </figure>
-    
+
                             <div id="locationText">
-    
+
                                 <div class="footerText">
-                                    <h5>Av. Waldomiro Lobo - 1270 <br> <span class="styleBold">Belo Horizonte, Brasil</span>
+                                    <h5>Av. Waldomiro Lobo - 1270 <br> <span class="styleBold">Belo Horizonte,
+                                            Brasil</span>
                                     </h5>
                                 </div>
-    
+
                             </div>
-    
+
                         </div>
-    
+
                         <div id="phone">
-    
+
                             <figure id="phoneImg">
                                 <img src="images/Phone icon.png" alt="Phone">
                             </figure>
-    
+
                             <div id="phoneText">
-    
+
                                 <div class="footerText">
                                     <h5> <span class="styleBold">+55 31 98462-5912 <br> +55 31 3437-8423</span></h5>
                                 </div>
-    
+
                             </div>
-    
+
                         </div>
-    
+
                         <div id="email">
-    
+
                             <figure id="emailImg">
                                 <img src="images/Email icon.png" alt="Email">
                             </figure>
-    
+
                             <div id="email">
-    
+
                                 <div class="footerText">
                                     <h5> <span class="styleBold">jacquisonv@gmail.com</span></h5>
                                 </div>
-    
+
                             </div>
-    
+
                         </div>
 
                     </div>
@@ -356,11 +356,13 @@
                     <div id="followUsImg">
 
                         <figure id="instagram">
-                            <a href="https://www.instagram.com/limp.ar.condicionados/" target="_blank"><img src="images/Instagram.png" alt="Instagram"></a>
+                            <a href="https://www.instagram.com/limp_arcondicionados/" target="_blank"><img
+                                    src="images/Instagram.png" alt="Instagram"></a>
                         </figure>
-    
+
                         <figure id="facebook">
-                            <a href="https://www.facebook.com/profile.php?id=61573556197586&locale=pt_BR" target="_blank"><img src="images/Facebook.png" alt="Facebook"></a>
+                            <a href="https://www.facebook.com/profile.php?id=61573556197586&locale=pt_BR"
+                                target="_blank"><img src="images/Facebook.png" alt="Facebook"></a>
                         </figure>
 
                     </div>
@@ -372,7 +374,7 @@
             <div id="copyright">
                 <p>
                     &copy;
-                    2024. Todos os direitos reservados. Designed and Development by Samuel Lucas.
+                    2024. Todos os direitos reservados. Designed and Development by LIMP-AR.
                 </p>
             </div>
 
