@@ -828,26 +828,158 @@ footer {
     }
 }
 
-/* Ajustes extras para telas muito pequenas */
+/* Ajustes para telas muito pequenas (até 400px) */
 @media (max-width: 400px) {
+    /* Ajustes gerais */
+    body {
+        padding-top: 3.5rem;
+        font-size: 13px;
+    } 
+    
+    /* Header compacto */
+    header, #headerBackground {
+        height: 3.5rem;
+    }
+    
+    #headerContent {
+        padding: 0.3rem 0.8rem;
+        height: auto;
+    }
+    
+    /* Logo e ícone de menu menores */
     #logo {
-        width: 80px;
+        width: 70px;
+        margin: 0;
     }
     
     .menu-icon {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        padding: 0.3rem;
+    }
+    
+    /* Menu suspenso */
+    header nav ul {
+        top: 3.5rem;
+    }
+    
+    header nav ul li {
+        margin: 0.4rem 0;
+    }
+    
+    header nav ul li a {
+        font-size: 0.9rem;
+    }
+    
+    /* Home mais compacta */
+    #home {
+        height: 16rem;
+    }
+    
+    #homeText {
+        top: 1.5rem;
+        left: 0.8rem;
+        right: 0.8rem;
     }
     
     #homeText h4 {
         font-size: 1rem;
+        margin-bottom: 0.3rem;
     }
     
-    #homeText h5, #homeText p {
+    #homeText h5 {
+        font-size: 0.8rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    #homeText p {
+        font-size: 0.75rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    #knowMore {
+        width: 85%;
+        padding: 0.5rem;
         font-size: 0.8rem;
     }
     
+    /* About Us mais compacto */
+    #aboutUs {
+        padding: 1.5rem 0.8rem;
+    }
+    
+    #aboutUsText h5 {
+        font-size: 0.75rem;
+        line-height: 1.4;
+    }
+    
+    #aboutUsText a {
+        font-size: 0.75rem;
+    }
+    
+    /* Services mais compactos */
     .title h3 {
-        font-size: 1.1rem;
+        font-size: 1rem;
+    }
+    
+    #install, #cleaning, #maintenance {
+        padding: 1.2rem 0.8rem;
+    }
+    
+    .subtitle h4 {
+        font-size: 0.9rem;
+    }
+    
+    .text h5 {
+        font-size: 0.75rem;
+    }
+    
+    /* Footer mais compacto */
+    #footerContent {
+        padding: 1.2rem 0.8rem;
+        gap: 1.2rem;
+    }
+    
+    .footerTitle h3 {
+        font-size: 1rem;
+    }
+    
+    .footerText h5 {
+        font-size: 0.75rem;
+    }
+    
+    #location, #phone, #email {
+        gap: 0.6rem;
+    }
+    
+    #copyright {
+        height: 3rem;
+    }
+    
+    #copyright p {
+        font-size: 0.6rem;
+    }
+}
+
+/* Ajustes extras para telas extremamente pequenas (opcional) */
+@media (max-width: 350px) {
+    #logo {
+        width: 60px;
+    }
+    
+    .menu-icon {
+        font-size: 1rem;
+    }
+    
+    #homeText h4 {
+        font-size: 0.9rem;
+    }
+    
+    #homeText h5 {
+        font-size: 0.7rem;
+    }
+    
+    #knowMore {
+        font-size: 0.75rem;
     }
 }
 
