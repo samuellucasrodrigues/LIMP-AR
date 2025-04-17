@@ -722,61 +722,132 @@ footer {
 
 /* Celulares pequenos (até 576px) */
 @media (max-width: 576px) {
+    /* Ajustes gerais */
+    body {
+        padding-top: 4rem;
+        font-size: 14px;
+    }
+    
     /* Header */
+    header, #headerBackground {
+        height: 5rem;
+    }
+    
     #headerContent {
-        flex-direction: column;
+        padding: 0.5rem 1rem;
         height: auto;
-        padding: 1rem;
     }
     
     #logo {
-        margin-bottom: 1rem;
+        width: 120px;
+        margin: 0;
     }
     
-    header nav {
-        flex-direction: column;
-        gap: 1rem;
-        width: 100%;
+    /* Menu mobile */
+    .menu-icon {
+        top: -0.5rem;
+        right: 0.5rem;
     }
     
     header nav ul {
-        flex-direction: column;
-        gap: 0.5rem;
-        width: 100%;
-        text-align: center;
+        top: 5rem;
     }
     
-    #getContact {
-        width: 100%;
-        text-align: center;
-    }
     
-    /* Home */
+    /* Conteúdo principal */
     #home {
-        height: 16rem;
+        height: 18rem;
+        background-position: 70% center;
     }
     
     #homeText {
         top: 2rem;
         left: 1rem;
+        right: 1rem;
+    }
+    
+    #homeText h4 {
+        font-size: 1.1rem;
+    }
+    
+    #homeText h5, #homeText p {
+        font-size: 0.9rem;
+        line-height: 1.4;
     }
     
     #knowMore {
-        width: 100%;
+        width: 80%;
+        padding: 0.6rem;
+        font-size: 0.9rem;
     }
     
-    
-    /* Footer */
-    .footerTitle h3 {
-        font-size: 1.2rem;
+    /* About Us */
+    #aboutUs {
+        padding: 2rem 1rem;
     }
     
-    .footerText h5 {
+    #aboutUsText h5 {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+    
+    /* Services */
+    #servicesTitle {
+        margin: 1rem 0;
+    }
+    
+    #install, #cleaning, #maintenance {
+        padding: 1.5rem 1rem;
+    }
+    
+    .subtitle h4 {
         font-size: 1rem;
     }
     
+    .text h5 {
+        font-size: 0.85rem;
+        line-height: 1.5;
+    }
+    
+    /* Footer */
+    #footerContent {
+        padding: 1.5rem 1rem;
+        gap: 1.5rem;
+    }
+    
+    .footerTitle h3 {
+        font-size: 1.1rem;
+    }
+    
+    .footerText h5 {
+        font-size: 0.85rem;
+    }
+    
     #copyright p {
+        font-size: 0.65rem;
+    }
+}
+
+/* Ajustes extras para telas muito pequenas */
+@media (max-width: 400px) {
+    #logo {
+        width: 80px;
+    }
+    
+    .menu-icon {
+        font-size: 1.2rem;
+    }
+    
+    #homeText h4 {
+        font-size: 1rem;
+    }
+    
+    #homeText h5, #homeText p {
         font-size: 0.8rem;
+    }
+    
+    .title h3 {
+        font-size: 1.1rem;
     }
 }
 
@@ -791,6 +862,3 @@ footer {
         margin: 0 auto;
     }
 }
-
-
-
