@@ -397,6 +397,12 @@ footer {
     align-items: center;
     gap: 1.4375rem;
 }
+
+#phoneText .footerText h5,
+#phoneText .footerText .styleBold {
+    color: white !important; /* Força a cor branca */
+    text-decoration: none !important; /* Remove sublinhado */
+}
 /* CONTACT END */
 
 /* LINKS */
