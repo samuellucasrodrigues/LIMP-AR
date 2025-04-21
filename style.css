@@ -156,6 +156,10 @@ header nav ul li a:hover {
     transition: 0.4s;
 }
 
+.button,#mobileContact a:hover {
+    text-decoration: none;
+}
+
 /* MENU MOBILE */
  
 #menuToogle {
